@@ -26,17 +26,17 @@ services:
     command: --sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
     container_name: eventrid-backend-mysql
 
-  # init:
-  #   build: 
-  #     context: .
-  #   command: sh -c "npm ci && npm run seed && npm start"
-  #   volumes:
-  #     - ./:/eventrid-backend
-  #     - node_modules:/usr/src/app/node_modules/
-  #   depends_on:
-  #     - mysql
-  #   ports:
-  #     - 3000:3000
+  init:
+    build: 
+      context: .
+    command: sh -c "npm ci && npm run seed && npm start"
+    volumes:
+      - ./:/eventrid-backend
+      - node_modules:/usr/src/app/node_modules/
+    depends_on:
+      - mysql
+    ports:
+      - 3000:3000
 
 volumes:
   node_modules:
