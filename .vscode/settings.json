@@ -1,0 +1,52 @@
+{
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.suggestionActions.enabled": true,
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.suggestionActions.enabled": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "none",
+    "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+    "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "editor.formatOnSave": true
+    },
+    "auto-close-tag.activationOnLanguage": ["html", "xml", "javascript"],
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true,
+        "**/cache": true,
+        "**/dist": true,
+        "**/temp": true
+    },
+    "files.eol": "\n",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "[html][typescript]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+      }
+    }
+}

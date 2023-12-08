@@ -1,0 +1,25 @@
+{
+  "name": "${localWorkspaceFolderBasename} - Container",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "eventrid-backend",
+	"workspaceFolder": "/eventrid-backend",
+	"shutdownAction": "none",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "eg2.vscode-npm-script",
+        "irongeek.vscode-env",
+        "medo64.render-crlf",
+        "rbbit.typescript-hero",
+        "bierner.markdown-mermaid",
+        "aaron-bond.better-comments",
+      ]
+    }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm ci --force"
+}

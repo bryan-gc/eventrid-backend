@@ -1,0 +1,1 @@
+export const HOURS_TO_EXPIRE_REFRESH_TOKEN = 48;
